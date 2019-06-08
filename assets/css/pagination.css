@@ -1,0 +1,40 @@
+.pagination
+{
+	list-style: none;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 30px;
+	float: left;
+	padding: 0;
+}
+.page-item
+{
+	margin: 0 10px 0 0;
+	background-color: #262626;
+}
+.page-link
+{
+	height: 30px;
+	text-decoration: none;
+	color: #dfdfdf;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 16px;
+	font-family: 'Roboto', serif;
+	padding: 0 10px;
+}
+.active
+{
+	background-color: #8c8d8e;
+}
+.disabled .page-link
+{
+	background-color: #555555;
+	cursor: default;
+}
+.dots
+{
+	background-color: transparent;
+}

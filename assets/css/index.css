@@ -1,0 +1,414 @@
+/* В этом файле вы пишете css код вашего приложения */
+
+html{
+  height: 100%;
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #f1f3f5;
+}
+
+.container {
+  max-width: 1240px;
+  width: calc(100% - 40px);
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
+/* header */
+
+.header {
+  background: url('/assets/img/bg.jpg') bottom center / cover no-repeat;
+  display: flex;
+  flex: 0 0 300px;
+  margin-bottom: 60px;
+}
+
+.header-title {
+  margin: auto;
+  color: white;
+  text-align: center;
+}
+
+.header-logo {
+  transform: translateX(60px);
+  margin-bottom: 35px;
+}
+
+.header-title__main {
+  font-weight: 500;
+  margin-top: 0;
+  margin-bottom: 20px;
+  font-size: 24px;
+}
+
+.header-title__add {
+  font-weight: 400;
+  margin-top: 0;
+  font-size: 16px;
+}
+
+/* end header */
+
+
+
+
+/* articles-list */
+.articles-list {
+  padding: 0 20px;
+}
+
+/* end articles-list */
+
+
+
+
+/* sidebar */
+
+/*.sidebar {
+  flex: 0 0 26.66666666666667%;
+}*/
+
+.sidebar {
+  width: calc(100% - 40px);
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.sidebar-item {
+  margin-bottom: 45px;
+}
+
+.sidebar-item__title {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.sidebar-item__title .delimiter {
+  flex: 1;
+  margin: 0 10px;
+  height: 2px;
+  background-color: #8c8d8e;
+}
+
+.sidebar-item__title .title {
+  font-weight: 700;
+  font-size: 16px;
+}
+
+.sidebar-item__title .icon {
+  width: 20px;
+  height: 20px;
+}
+
+.sidebar-item__label {
+  font-weight: 700;
+  color: white;
+  font-size: 12px;
+  display: inline-block;
+  padding: 5px 10px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  background-color: #262626;
+  transition: all 0.25s;
+  text-decoration: none;
+  outline: none;
+  cursor: pointer;
+  border: none;
+}
+
+.sidebar-item__label:hover {
+  background-color: #8c8d8e;
+}
+/* end sidebar */
+
+
+
+
+/* footer */
+
+.footer {
+  flex: 0 0 120px;
+  line-height: 120px;
+  display: flex;
+  background-color: #262626;
+  color: white;
+  font-size: 14px;
+}
+
+.footer-logo {
+  flex: 0 0 120px;
+  display: flex;
+  background-color: #000;
+}
+
+.footer-logo__pic {
+  margin: auto;
+  width: 38px;
+  height: 44px;
+}
+
+.footer-main,
+.footer-cr {
+  text-align: center;
+}
+
+.footer-main {
+  flex: 1;
+}
+
+.footer-cr {
+  flex: 0 0 200px;
+}
+
+/* end footer */
+
+
+.selectContainer
+{
+  width: 100%;
+  height: 40px;
+  position: relative;
+}
+.selectContainer select.sidebarAuthors
+{
+  width: 100%;
+  height: 44px;
+  overflow-y: scroll;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 20px;
+  box-sizing: border-box;
+  font-size: 12px;
+  font-style: italic;
+  color: #bababa;
+  border-color: #bababa;
+}
+.selectContainer select.sidebarAuthors option
+{
+  color: #262626;
+  cursor: pointer;
+}
+.customArrow
+{
+  width: 44px;
+  height: 44px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  background-color: #262626;
+  color: #fff;
+  pointer-events: none;
+  z-index: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.customArrow i
+{
+  z-index: 999;
+}
+.article
+{
+  width: 840px;
+  margin: 0 40px 40px 0;
+  background-color: #f8f9fa;
+  box-shadow: 1px 1px 6px #333333;
+}
+.articleContent
+{
+  padding: 40px;
+}
+.article img
+{
+  width: 100%;
+  height: 400px;
+}
+.articleTitle
+{
+  font-size: 30px;
+  font-family: 'Spectral', serif;
+  color: #333333;
+  margin: 0 0 35px 0;
+  text-decoration: none;
+  display: inline-block;
+  font-weight: bold;
+}
+.article .articleInfo
+{
+  font-size: 12px;
+  font-family: 'Roboto', serif;
+  color: #333333;
+  margin-bottom: 30px;
+}
+.date
+{
+  color: #acacac;
+}
+.date:before
+{
+  content: '/';
+  display: inline-block;
+  color: #acacac;
+  margin: 0 5px;
+}
+.articleAnnotation
+{
+  font-size: 16px;
+  font-family: 'Spectral', serif;
+  color: #333333;
+}
+nav
+{
+  max-width: 1240px;
+  width: calc(100% - 40px);
+  padding: 0 20px;
+  margin: 0 auto 80px;
+}
+.sidebar-item__label.sidebar_active
+{
+  background-color: #8c8d8e;
+}
+.sidebar_months
+{
+  display: none;
+}
+.sidebar_reset
+{
+  width: 100%;
+  height: 40px;
+  background-color: #262626;
+  color: #fff;
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  font-size: 20px;
+  font-style: 'Spectral', serif;
+  display: none;
+  margin-bottom: 40px;
+}
+.sidebar_reset:hover
+{
+  background-color: #444;
+}
+
+* { box-sizing: border-box; }
+
+.preloaderContainer
+{
+  position: fixed;
+  z-index: 998;
+  width: 100%;
+  min-height: 100%;
+  background: rgba(14, 19, 36,.8);
+  display: none;
+}
+#circle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  width: 150px;
+  height: 150px;
+}
+
+.loader {
+  width: calc(100% - 0px);
+  height: calc(100% - 0px);
+  border: 8px solid #93bdea;
+  border-top: 8px solid #00081f;
+  border-radius: 50%;
+  animation: rotate 5s linear infinite;
+}
+
+@keyframes rotate {
+  100% {transform: rotate(360deg);}
+}
+
+@media (max-width: 1280px) {
+  .article
+  {
+    margin: 0 auto 40px;
+  }
+  nav
+  {
+    width: auto;
+  }
+}
+
+@media (max-width: 1280px) {
+  .article
+  {
+    width: 90%;
+  }
+}
+@media (max-width: 768px)
+{
+  .container
+  {
+    padding: 0;
+  }
+  .articles-list
+  {
+    padding: 0;
+  }
+  .article img
+  {
+    height: 300px;
+  }
+  .articleContent
+  {
+    padding: 30px;
+  }
+  .articleTitle
+  {
+    margin-bottom: 25px;
+  }
+  .article .articleInfo
+  {
+    margin-bottom: 20px;
+  }
+}
+@media (max-width: 560px) {
+  .header-logo {
+    transform: translateX(0);
+    width: 100vw;
+  }
+  .articleTitle
+  {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  .article .articleInfo
+  {
+    margin-bottom: 15px;
+  }
+  .article img
+  {
+    height: 200px;
+  }
+  .articleContent
+  {
+    padding: 20px;
+  }
+  nav
+  {
+    margin-bottom: 40px;
+  }
+}
+@media (max-width: 440px)
+{
+  .articleTitle
+    {
+      font-size: 19px;
+    }
+}
